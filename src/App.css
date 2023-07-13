@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+.App {
+  height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Varela Round', sans-serif;
+  overflow: hidden;
+  border: 0
+}
+
+h1{
+  margin-top: 20px;
+}                                                                      
+
+
+
+.column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border:0
+}
+
+.coolors {
+  display: flex;
+  margin-top: 50px;
+}
+
+.ref {
+  margin: 26px;
+  background-color: transparent;
+  border: none;
+  color: rgb(107, 107, 107);
+  font-size: 11px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 250px;
+  margin: 0px 20px;
+  border-radius: 50px;
+  box-shadow: 1px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+img {
+  width: 12px;
+  height: auto;
+}
+
+.ball {
+  width: 100px;
+  height: 100px;
+  margin: 0px 20px;
+  border-radius: 100%;
+  box-shadow: 1px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+.generate {
+    border-radius: 10%;
+    margin: 50px;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .generate:after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+    border-radius: 10%;
+  }
+  
+  .generate:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  
+  @media (min-width: 768px) {
+    .generate {
+      padding: 13px 50px 13px;
+    }
+  }
+  
+
